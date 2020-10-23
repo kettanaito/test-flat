@@ -1,6 +1,6 @@
 {
-  "name": "flat-test",
-  "version": "0.0.1",
+  "name": "test-flat",
+  "version": "0.0.2",
   "description": "A tiny utility to write flat tests in Jest",
   "main": "lib/index.js",
   "repository": "git@github.com:kettanaito/flat-test.git",
