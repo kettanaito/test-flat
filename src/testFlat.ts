@@ -1,7 +1,7 @@
-export function createFlatTest(
+export function createTestFlat(
   runner: typeof test | typeof test.skip | typeof test.only
 ) {
-  const flatTest: jest.It['flat'] = (title, suite, before, after) => {
+  const testFlat: jest.It['flat'] = (title, suite, before, after) => {
     runner(title, async () => {
       const context = await before()
 
@@ -13,9 +13,9 @@ export function createFlatTest(
     })
   }
 
-  return flatTest
+  return testFlat
 }
 
-test.flat = createFlatTest(test)
-test.only.flat = createFlatTest(test.only)
-test.skip.flat = createFlatTest(test.skip)
+test.flat = createTestFlat(test)
+test.only.flat = createTestFlat(test.only)
+test.skip.flat = createTestFlat(test.skip)

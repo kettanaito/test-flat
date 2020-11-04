@@ -1,1 +1,1 @@
-export { flatTest } from './flatTest'
+import './testFlat'

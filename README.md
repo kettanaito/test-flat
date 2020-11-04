@@ -1,4 +1,4 @@
-# `flat-test`
+# `test-flat`
 
 A test framework extension to support resources teardown and cleanup in flat tests.
 
@@ -11,14 +11,14 @@ Writing flat (shallow) test suites has a [number of advantages](https://kentcdod
 ### Install
 
 ```bash
-$ npm install flat-test --save-dev
+$ npm install test-flat --save-dev
 ```
 
 ### Extend Jest
 
 ```js
 // jest.setup.js
-import 'flat-test'
+import 'test-flat'
 ```
 
 ## Example
@@ -77,7 +77,7 @@ A test suite title.
 
 A test suite itself.
 
-> Test suite function in `flat-test` is always an asynchronous function and does not support the `done` callback argument.
+> Test suite function in `test-flat` is always an asynchronous function and does not support the `done` callback argument.
 
 ### `before`
 
