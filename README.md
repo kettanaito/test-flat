@@ -205,7 +205,7 @@ test(
   () => {
     /* Your test here */
   },
-  startServer(3001),
+  startServer({ port: 3001 }),
   closeServer
 )
 ```
